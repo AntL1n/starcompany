@@ -413,8 +413,9 @@ body {
     padding-right: 10px;
   }
   .header {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     flex-direction: column;
+    padding: 30px 0 0px;
   }
   .wrapper h1 {
     font-size: 30px;
