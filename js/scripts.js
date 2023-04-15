@@ -30,7 +30,7 @@ const validateStep = async (step) => {
   const location = document.getElementById("location-input").value;
 
   const response = await fetch(
-    "http://www.mocky.io/v2/5dfcef48310000ee0ed2c281",
+    "https://www.mocky.io/v2/5dfcef48310000ee0ed2c281",
     {
       method: "POST",
       body: JSON.stringify({ age, email, password, location }),
