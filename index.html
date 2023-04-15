@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarCompany</title>
+  <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+  <link rel="stylesheet" ref="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img class="logo" src="images/logo.png" alt="logo" />
+      <button class="button" id="login-button">Log in</button>
+
+      <div id="login-form" style="display: none">
+        <input type="email" id="email-login" placeholder="Email" />
+        <div class="password-wrapper">
+          <input type="password" id="password-login" placeholder="Password" />
+          <label for="password-login">Forgot your password?</label>
+        </div>
+        <button class="button button-finish" id="login" type="submit">Log in</button>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h1>
+          <span>StarCompany DESIGNS, MANUFACTURES AND</span><br />Launches
+          Advanced Rockets and Spacecrafts
+        </h1>
+      </div>
+
+      <form id="form-container" style="display: none">
+        <div id="form-steps">
+          <div id="step1" class="step">
+            <button id="step1-back" class="back-button" disabled></button>
+            <div class="form-dropdown custom-select">
+              <label for="profession-select">Who are you?</label>
+              <select id="profession-select">
+                <option value="engineer">Engineer</option>
+                <option value="business">
+                  Business Development Executive
+                </option>
+                <option value="manager">Office Manager/PA</option>
+                <option value="accountant">Accountant</option>
+                <option value="designer">VR Designer</option>
+              </select>
+            </div>
+            <button id="step1-next" class="button next-button">
+              Next step
+            </button>
+          </div>
+          <div id="step2" class="step">
+            <button id="step2-back" class="back-button"></button>
+            <div class="form-dropdown custom-select">
+              <label for="age-select">Select your age</label>
+              <select id="age-select">
+                <option value="">Select age</option>
+                <option value="18-24">18-24</option>
+                <option value="25-34">25-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45+">45+</option>
+              </select>
+            </div>
+            <button id="step2-next" class="button next-button">
+              Next step
+            </button>
+          </div>
+          <div id="step3" class="step step-3">
+            <div class="form-wraper-text">
+              <button id="step3-back" class="back-button"></button>
+              <div class="form-dropdown">
+                <label for="location-input">I am from</label>
+                <input type="text" id="location-input" placeholder="New Roads, 70760" />
+              </div>
+              <button id="step3-next" class="button next-button">
+                Next step
+              </button>
+            </div>
+
+            <p class="form-text">
+              E.g.: New Roads or 70760<br />
+              We don’t use postal addresses to contact members directly!
+            </p>
+          </div>
+
+          <div id="step4" class="step">
+            <button id="step4-back" class="back-button"></button>
+            <div class="form-dropdown">
+              <label for="email-input">Your email adress</label>
+              <input type="email" id="email-input" placeholder="Input your email" />
+            </div>
+            <button id="step4-next" class="button next-button">Next</button>
+          </div>
+          <div id="step5" class="step step-5">
+            <div class="form-wraper-text">
+              <button id="step5-back" class="back-button"></button>
+              <div class="form-dropdown">
+                <label for="password-input">Create your password</label>
+                <input type="password" id="password-input" placeholder="" />
+              </div>
+              <button type="submit" id="step5-next" class="button start-button next-button">
+                Start now
+              </button>
+            </div>
+            <p class="form-text">
+              By clicking the button above you agree to our
+              <span>Terms of Use</span> and
+              <span>Privacy Policy</span> including use of cookies and to
+              receive newsletters, account updates and offers sent by
+              StarCompany.
+            </p>
+          </div>
+          <div id="error-container"></div>
+          <div id="progress-bar">
+            <div class="circle active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+</body>
+<script src="js/less.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
