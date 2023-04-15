@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 .container {
   max-width: 1200px;
